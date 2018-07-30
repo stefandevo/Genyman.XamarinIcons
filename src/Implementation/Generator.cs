@@ -115,6 +115,7 @@ namespace Stefandevo.Genyman.XamarinIcons.Implementation
 					var img = SKImage.FromBitmap(bmp);
 
 					var data = img.Encode(SKEncodedImageFormat.Png, 100);
+					asset.FileName.EnsureFolderExists();
 					using (var fs = File.Open(asset.FileName, FileMode.Create))
 					{
 						Log.Information($"Writing {asset.FileName}");
