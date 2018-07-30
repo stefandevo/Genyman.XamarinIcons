@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{3092A335-272E-4066-B671-25891D6F8816}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XamarinAssetsApp.iOS</RootNamespace>
+    <AssemblyName>XamarinAssetsApp.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <IOSDebuggerPort>24664</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>21717</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-58x58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-80x80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-87x87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-120x120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-152x152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-167x167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-180x180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-1024x1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-48x48.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-55x55.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-88x88.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-172x172.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-196x196.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-16x16.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-32x32.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-64x64.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-128x128.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-256x256.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-512x512.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\house.png" />
+    <BundleResource Include="Resources\house@2x.png" />
+    <BundleResource Include="Resources\house@3x.png" />
+    <BundleResource Include="Resources\vlc.png" />
+    <BundleResource Include="Resources\vlc@2x.png" />
+    <BundleResource Include="Resources\vlc@3x.png" />
+    <BundleResource Include="Resources\map.png" />
+    <BundleResource Include="Resources\map@2x.png" />
+    <BundleResource Include="Resources\map@3x.png" />
+    <BundleResource Include="Resources\pen.png" />
+    <BundleResource Include="Resources\pen@2x.png" />
+    <BundleResource Include="Resources\pen@3x.png" />
+    <BundleResource Include="Resources\voice_mail.png" />
+    <BundleResource Include="Resources\voice_mail@2x.png" />
+    <BundleResource Include="Resources\voice_mail@3x.png" />
+    <BundleResource Include="Resources\calendar_1.png" />
+    <BundleResource Include="Resources\calendar_1@2x.png" />
+    <BundleResource Include="Resources\calendar_1@3x.png" />
+    <BundleResource Include="Resources\loupe.png" />
+    <BundleResource Include="Resources\loupe@2x.png" />
+    <BundleResource Include="Resources\loupe@3x.png" />
+    <BundleResource Include="Resources\lock.png" />
+    <BundleResource Include="Resources\lock@2x.png" />
+    <BundleResource Include="Resources\lock@3x.png" />
+    <BundleResource Include="Resources\shopping_bag.png" />
+    <BundleResource Include="Resources\shopping_bag@2x.png" />
+    <BundleResource Include="Resources\shopping_bag@3x.png" />
+    <BundleResource Include="Resources\_3d_glasses.png" />
+    <BundleResource Include="Resources\_3d_glasses@2x.png" />
+    <BundleResource Include="Resources\_3d_glasses@3x.png" />
+    <BundleResource Include="Resources\key.png" />
+    <BundleResource Include="Resources\key@2x.png" />
+    <BundleResource Include="Resources\key@3x.png" />
+    <BundleResource Include="Resources\brush.png" />
+    <BundleResource Include="Resources\brush@2x.png" />
+    <BundleResource Include="Resources\brush@3x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings@2x.png" />
+    <BundleResource Include="Resources\settings@3x.png" />
+    <BundleResource Include="Resources\mail.png" />
+    <BundleResource Include="Resources\mail@2x.png" />
+    <BundleResource Include="Resources\mail@3x.png" />
+    <BundleResource Include="Resources\download.png" />
+    <BundleResource Include="Resources\download@2x.png" />
+    <BundleResource Include="Resources\download@3x.png" />
+    <BundleResource Include="Resources\magic_wand.png" />
+    <BundleResource Include="Resources\magic_wand@2x.png" />
+    <BundleResource Include="Resources\magic_wand@3x.png" />
+    <BundleResource Include="Resources\alarm_clock.png" />
+    <BundleResource Include="Resources\alarm_clock@2x.png" />
+    <BundleResource Include="Resources\alarm_clock@3x.png" />
+    <BundleResource Include="Resources\book.png" />
+    <BundleResource Include="Resources\book@2x.png" />
+    <BundleResource Include="Resources\book@3x.png" />
+    <BundleResource Include="Resources\push_pin.png" />
+    <BundleResource Include="Resources\push_pin@2x.png" />
+    <BundleResource Include="Resources\push_pin@3x.png" />
+    <BundleResource Include="Resources\flag.png" />
+    <BundleResource Include="Resources\flag@2x.png" />
+    <BundleResource Include="Resources\flag@3x.png" />
+    <BundleResource Include="Resources\document.png" />
+    <BundleResource Include="Resources\document@2x.png" />
+    <BundleResource Include="Resources\document@3x.png" />
+    <BundleResource Include="Resources\pie_chart.png" />
+    <BundleResource Include="Resources\pie_chart@2x.png" />
+    <BundleResource Include="Resources\pie_chart@3x.png" />
+    <BundleResource Include="Resources\wifi.png" />
+    <BundleResource Include="Resources\wifi@2x.png" />
+    <BundleResource Include="Resources\wifi@3x.png" />
+    <BundleResource Include="Resources\loading.png" />
+    <BundleResource Include="Resources\loading@2x.png" />
+    <BundleResource Include="Resources\loading@3x.png" />
+    <BundleResource Include="Resources\message.png" />
+    <BundleResource Include="Resources\message@2x.png" />
+    <BundleResource Include="Resources\message@3x.png" />
+    <BundleResource Include="Resources\play_button.png" />
+    <BundleResource Include="Resources\play_button@2x.png" />
+    <BundleResource Include="Resources\play_button@3x.png" />
+    <BundleResource Include="Resources\notification.png" />
+    <BundleResource Include="Resources\notification@2x.png" />
+    <BundleResource Include="Resources\notification@3x.png" />
+    <BundleResource Include="Resources\picture.png" />
+    <BundleResource Include="Resources\picture@2x.png" />
+    <BundleResource Include="Resources\picture@3x.png" />
+    <BundleResource Include="Resources\send.png" />
+    <BundleResource Include="Resources\send@2x.png" />
+    <BundleResource Include="Resources\send@3x.png" />
+    <BundleResource Include="Resources\camera.png" />
+    <BundleResource Include="Resources\camera@2x.png" />
+    <BundleResource Include="Resources\camera@3x.png" />
+    <BundleResource Include="Resources\floppy_disk.png" />
+    <BundleResource Include="Resources\floppy_disk@2x.png" />
+    <BundleResource Include="Resources\floppy_disk@3x.png" />
+    <BundleResource Include="Resources\security.png" />
+    <BundleResource Include="Resources\security@2x.png" />
+    <BundleResource Include="Resources\security@3x.png" />
+    <BundleResource Include="Resources\page.png" />
+    <BundleResource Include="Resources\page@2x.png" />
+    <BundleResource Include="Resources\page@3x.png" />
+    <BundleResource Include="Resources\compass.png" />
+    <BundleResource Include="Resources\compass@2x.png" />
+    <BundleResource Include="Resources\compass@3x.png" />
+    <BundleResource Include="Resources\credit_card.png" />
+    <BundleResource Include="Resources\credit_card@2x.png" />
+    <BundleResource Include="Resources\credit_card@3x.png" />
+    <BundleResource Include="Resources\pencil.png" />
+    <BundleResource Include="Resources\pencil@2x.png" />
+    <BundleResource Include="Resources\pencil@3x.png" />
+    <BundleResource Include="Resources\video_player.png" />
+    <BundleResource Include="Resources\video_player@2x.png" />
+    <BundleResource Include="Resources\video_player@3x.png" />
+    <BundleResource Include="Resources\delete.png" />
+    <BundleResource Include="Resources\delete@2x.png" />
+    <BundleResource Include="Resources\delete@3x.png" />
+    <BundleResource Include="Resources\clock.png" />
+    <BundleResource Include="Resources\clock@2x.png" />
+    <BundleResource Include="Resources\clock@3x.png" />
+    <BundleResource Include="Resources\eye.png" />
+    <BundleResource Include="Resources\eye@2x.png" />
+    <BundleResource Include="Resources\eye@3x.png" />
+    <BundleResource Include="Resources\gift.png" />
+    <BundleResource Include="Resources\gift@2x.png" />
+    <BundleResource Include="Resources\gift@3x.png" />
+    <BundleResource Include="Resources\charging.png" />
+    <BundleResource Include="Resources\charging@2x.png" />
+    <BundleResource Include="Resources\charging@3x.png" />
+    <BundleResource Include="Resources\calendar.png" />
+    <BundleResource Include="Resources\calendar@2x.png" />
+    <BundleResource Include="Resources\calendar@3x.png" />
+    <BundleResource Include="Resources\brightness.png" />
+    <BundleResource Include="Resources\brightness@2x.png" />
+    <BundleResource Include="Resources\brightness@3x.png" />
+    <BundleResource Include="Resources\shopping_cart.png" />
+    <BundleResource Include="Resources\shopping_cart@2x.png" />
+    <BundleResource Include="Resources\shopping_cart@3x.png" />
+    <BundleResource Include="Resources\block.png" />
+    <BundleResource Include="Resources\block@2x.png" />
+    <BundleResource Include="Resources\block@3x.png" />
+    <BundleResource Include="Resources\shopping_basket.png" />
+    <BundleResource Include="Resources\shopping_basket@2x.png" />
+    <BundleResource Include="Resources\shopping_basket@3x.png" />
+    <BundleResource Include="Resources\folder.png" />
+    <BundleResource Include="Resources\folder@2x.png" />
+    <BundleResource Include="Resources\folder@3x.png" />
+    <BundleResource Include="Resources\garbage.png" />
+    <BundleResource Include="Resources\garbage@2x.png" />
+    <BundleResource Include="Resources\garbage@3x.png" />
+    <BundleResource Include="Resources\heart.png" />
+    <BundleResource Include="Resources\heart@2x.png" />
+    <BundleResource Include="Resources\heart@3x.png" />
+  </ItemGroup>
+  <Import Project="..\XamarinAssetsApp.projitems" Label="Shared" Condition="Exists('..\XamarinAssetsApp.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

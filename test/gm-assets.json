@@ -1,0 +1,43 @@
+{
+    "genyman": {
+        "packageId": "Stefandevo.Genyman.XamarinAssets",
+        "version": "",
+        "nugetSource": "",
+        "info": "This is a Genyman configuration file - https://genyman.github.io/docs/"
+    },
+    "configuration": {
+        "assetsPath": "Assets",
+        "platforms": [
+            {
+                "type": "iOS",
+                "projectPath": "XamarinAssetsApp/iOS"
+            },
+            {
+                "type": "Android",
+                "projectPath": "XamarinAssetsApp/Droid"
+            },
+            {
+                "type": "UWP",
+                "projectPath": "XamarinAssetsApp/UWP"
+            }
+        ],
+        "assetDefault": {
+            "pattern": "*.*",
+            "size": "24x24"
+        },
+        "assets": [
+            {
+                "file": "house.svg"
+            },
+            {
+                "file": "vlc.svg"
+            },
+            {
+                "file": "map.svg"
+            },
+            {
+                "file": "pen.svg"
+            }
+        ]
+    }
+}

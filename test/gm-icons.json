@@ -1,0 +1,37 @@
+{
+    "genyman": {
+        "packageId": "Stefandevo.Genyman.XamarinIcons",
+        "version": "",
+        "nugetSource": "",
+        "info": "This is a Genyman configuration file - https://genyman.github.io/docs/"
+    },
+    "configuration": {
+        "platforms": [
+            {
+                "type": "iOS",
+                "projectPath": "XamarinAssetsApp/iOS",
+                "iconFileName": "Icons/Icon.svg"
+            },
+            {
+                "type": "AppleWatch",
+                "projectPath": "XamarinAssetsApp/iOS",
+                "iconFileName": "Icons/Icon.svg"
+            },
+            {
+                "type": "MacOs",
+                "projectPath": "XamarinAssetsApp/iOS",
+                "iconFileName": "Icons/Icon.svg"
+            },
+            {
+                "type": "Android",
+                "projectPath": "XamarinAssetsApp/Droid",
+                "iconFileName": "Icons/Icon-Transparent.svg"
+            },
+            {
+                "type": "UWP",
+                "projectPath": "XamarinAssetsApp/UWP",
+                "iconFileName": "Icons/Icon.svg"
+            }
+        ]
+    }
+}
