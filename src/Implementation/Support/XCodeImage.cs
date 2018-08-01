@@ -1,6 +1,6 @@
 namespace Stefandevo.Genyman.XamarinIcons.Implementation.Support
 {
-	public class XCodeImage
+	internal class XCodeImage
 	{
 		public string Filename { get; set; }
 		public string Role { get; set; }

@@ -1,9 +1,9 @@
 using System.IO;
-using Genyman.Core.Helpers;
+using Genyman.Core;
 
 namespace Stefandevo.Genyman.XamarinIcons.Implementation.Support
 {
-	public class ExportAsset
+	internal class ExportAsset
 	{
 		readonly string _source;
 		readonly string _targetPath;

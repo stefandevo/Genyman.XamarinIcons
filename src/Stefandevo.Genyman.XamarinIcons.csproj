@@ -5,14 +5,14 @@
 		<PackAsTool>true</PackAsTool>
 		<TargetFramework>netcoreapp2.1</TargetFramework>
 		<AssemblyName>Stefandevo.Genyman.XamarinIcons</AssemblyName>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Description>Based upon a single SVG source create all icons for iOS, Android, UWP</Description>
 		<PackageTags>Genyman</PackageTags>
 		<IncludeContentInPack>false</IncludeContentInPack>
 		<PackageIconUrl>https://raw.githubusercontent.com/genyman/genyman/master/graphics/genyman64.png</PackageIconUrl>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Genyman.Core" Version="0.0.23" />
+		<PackageReference Include="Genyman.Core" Version="0.0.25" />
 		<PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
 	</ItemGroup>
 	<ItemGroup>

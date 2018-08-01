@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using Genyman.Core;
 using Genyman.Core.Helpers;
+using Genyman.Core.MSBuild;
 using ServiceStack;
 using ServiceStack.Text;
 using SkiaSharp;
@@ -13,7 +14,7 @@ using SKSvg = SkiaSharp.Extended.Svg.SKSvg;
 
 namespace Stefandevo.Genyman.XamarinIcons.Implementation
 {
-	public class Generator : GenymanGenerator<Configuration>
+	internal class Generator : GenymanGenerator<Configuration>
 	{
 		public override void Execute()
 		{
@@ -73,8 +74,8 @@ namespace Stefandevo.Genyman.XamarinIcons.Implementation
 					case Platforms.Android:
 					{
 						var folderPrefix = "mipmap";
-						if (platform.AndroidOptions != null && !string.IsNullOrEmpty(platform.AndroidOptions.AssetFolderPrefix))
-							folderPrefix = platform.AndroidOptions.AssetFolderPrefix;
+						if (platform.AndroidOptions != null && !string.IsNullOrEmpty(platform.AndroidOptions.AssetFolderPrefix.ToString()))
+							folderPrefix = platform.AndroidOptions.AssetFolderPrefix.ToString();
 						assets.Add(new ExportAsset(fileInfo.FullName, Path.Combine(platformPath.FullName, "Resources", $"{folderPrefix}-mdpi"), "Icon.png", sourceActualWidth, sourceActualHeight, 48,
 							48));
 						assets.Add(new ExportAsset(fileInfo.FullName, Path.Combine(platformPath.FullName, "Resources", $"{folderPrefix}-hdpi"), "Icon.png", sourceActualWidth, sourceActualHeight, 72,
@@ -134,13 +135,13 @@ namespace Stefandevo.Genyman.XamarinIcons.Implementation
 						case Platforms.iOS:
 						case Platforms.AppleWatch:
 						case Platforms.MacOs:
-							platformProjectFolder.AddXamarinIosImageAsset(destinationFile);
+							FluentMSBuild.Use(destinationFile).WithBuildAction(BuildAction.ImageAsset).AddToProject();
 							break;
 						case Platforms.Android:
-							platformProjectFolder.AddXamarinAndroidResource(destinationFile);
+							FluentMSBuild.Use(destinationFile).WithBuildAction(BuildAction.AndroidResource).AddToProject();
 							break;
 						case Platforms.UWP:
-							platformProjectFolder.AddXamarinUWPResource(destinationFile);
+							FluentMSBuild.Use(destinationFile).WithBuildAction(BuildAction.Content).AddToProject();
 							break;
 					}
 				}

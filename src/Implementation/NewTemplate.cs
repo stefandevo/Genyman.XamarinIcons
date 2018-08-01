@@ -2,7 +2,7 @@
 
 namespace Stefandevo.Genyman.XamarinIcons.Implementation
 {
-	public class NewTemplate : Configuration
+	internal class NewTemplate : Configuration
 	{
 		public NewTemplate()
 		{
@@ -21,7 +21,7 @@ namespace Stefandevo.Genyman.XamarinIcons.Implementation
 					IconFileName = "YourAndroidIconFile.svg",
 					AndroidOptions = new AndroidOptions()
 					{
-						AssetFolderPrefix = "mipmap"
+						AssetFolderPrefix = AndroidResourceFolder.mipmap
 					}
 				}
 			};
