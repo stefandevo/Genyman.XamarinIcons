@@ -4,7 +4,7 @@ using Genyman.Core;
 
 namespace Stefandevo.Genyman.XamarinIcons.Implementation
 {
-	[Documentation]
+	[Documentation(Source = "https://github.com/stefandevo/Genyman.XamarinIcons")]
 	public class Configuration
 	{
 		[Description("List of platforms")]
