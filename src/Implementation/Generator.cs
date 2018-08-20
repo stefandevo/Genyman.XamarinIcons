@@ -4,13 +4,11 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using Genyman.Core;
-using Genyman.Core.Helpers;
 using Genyman.Core.MSBuild;
 using ServiceStack;
 using ServiceStack.Text;
 using SkiaSharp;
 using Stefandevo.Genyman.XamarinIcons.Implementation.Support;
-using SKSvg = SkiaSharp.Extended.Svg.SKSvg;
 
 namespace Stefandevo.Genyman.XamarinIcons.Implementation
 {
@@ -31,13 +29,11 @@ namespace Stefandevo.Genyman.XamarinIcons.Implementation
 					continue;
 				}
 
-				var svg = new SKSvg();
-				svg.Load(fileInfo.FullName);
+				var svg = SkiaHelper.Load(fileInfo.FullName);
 
 				var sourceActualWidth = svg.Picture.CullRect.Width;
 				var sourceActualHeight = svg.Picture.CullRect.Height;
 
-				if (sourceActualWidth != 1024 || sourceActualHeight != 1024) Log.Warning("For best result the source app icon should be 1024x1024");
 
 				var assets = new List<ExportAsset>();
 

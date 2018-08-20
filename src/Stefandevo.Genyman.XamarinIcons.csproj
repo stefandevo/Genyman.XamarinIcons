@@ -5,7 +5,7 @@
 		<PackAsTool>true</PackAsTool>
 		<TargetFramework>netcoreapp2.1</TargetFramework>
 		<AssemblyName>Stefandevo.Genyman.XamarinIcons</AssemblyName>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
 		<Description>Based upon a single SVG source create all icons for iOS, Android, UWP</Description>
 		<PackageTags>Genyman</PackageTags>
 		<IncludeContentInPack>false</IncludeContentInPack>
